@@ -26,3 +26,4 @@ $(document).ready(function () {
         contentType: 'html'
     });
 });
+$("#abs").css

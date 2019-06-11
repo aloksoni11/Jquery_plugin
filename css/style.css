@@ -57,9 +57,11 @@ body {
     0% {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -69,9 +71,11 @@ body {
     0% {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -81,9 +85,11 @@ body {
     0% {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -93,9 +99,11 @@ body {
     0% {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -105,9 +113,11 @@ body {
     0% {
         opacity: 1;
     }
+
     50% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -129,4 +139,30 @@ body {
 
 .type {
     color: orange;
+}
+
+/*Data*/
+.data p {
+    font-size: 12px;
+    line-height: 28px;
+    text-align: center;
+
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: orange !important;
+    font-style: oblique;
+    font-size: 32px;
+}
+
+.nav-link {
+    font-size: 12px;
+
+}
+
+@media screen and (max-width:768px) {
+    .text-data h1 {
+        font-size: 24px;
+    }
 }
