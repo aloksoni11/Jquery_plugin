@@ -179,3 +179,8 @@ body {
         font-size: 24px;
     }
 }
+@media screen and (max-width:765px){
+    .table{
+        display: none;
+    }
+}
