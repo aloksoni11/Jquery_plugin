@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -34,7 +35,9 @@ body {
 .bg-1 {
     background-position: center;
     background-size: cover;
-    background-image: url(../images/bg-1.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../images/bg-1.jpg);
+    background-image: -o-linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../images/bg-1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .4)), url(../images/bg-1.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -57,11 +60,9 @@ body {
     0% {
         opacity: 1;
     }
-
     50% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
@@ -71,11 +72,9 @@ body {
     0% {
         opacity: 1;
     }
-
     50% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
@@ -85,11 +84,9 @@ body {
     0% {
         opacity: 1;
     }
-
     50% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
@@ -99,11 +96,9 @@ body {
     0% {
         opacity: 1;
     }
-
     50% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
@@ -113,11 +108,9 @@ body {
     0% {
         opacity: 1;
     }
-
     50% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
@@ -141,12 +134,15 @@ body {
     color: orange;
 }
 
+
 /*Data*/
+
 .data p {
     font-size: 12px;
     line-height: 28px;
     text-align: center;
-
+    width: 80%;
+    margin: auto;
 }
 
 .navbar-brand {
@@ -158,9 +154,26 @@ body {
 
 .nav-link {
     font-size: 12px;
-
 }
 
+#lightgallery img {
+    border: 10px solid #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#lightgallery div {
+    overflow: hidden;
+}
+
+#lightgallery img:hover {
+    transform: scale(1.2);
+    transition: all;
+    transition-duration: 2s;
+}
+.highlight{
+    font-weight: 600;
+}
 @media screen and (max-width:768px) {
     .text-data h1 {
         font-size: 24px;

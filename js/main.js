@@ -25,5 +25,21 @@ $(document).ready(function () {
         attr: null, // either html or text
         contentType: 'html'
     });
+    $('#table_id').DataTable();
+    $("#lightgallery").lightGallery({
+        mode: 'lg-fade'
+        , cssEasing: 'cubic-bezier(0.25, 0, 0.25, 1)'
+        , selector: '.item'
+    });
+    $(".highlight").css("color", getRandomColor());
+
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF';
+        var color = '#';
+        for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+        window.setInterval(getRandomColor(), 1000);
+    }
 });
-$("#abs").css
